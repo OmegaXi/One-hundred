@@ -1,14 +1,26 @@
 package one;
 
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+
+//用set的方式自动去重
 public class RemRep {
 	public static int[] removeRepeat(int[] a){
-		int N=a.length;//获取长度
-		int [] arr=new int[N];//用于复制的新数组，长度和原数组相同
-		for(int i=0;i<N;i++){
-			arr[i]=a[i];//保护性复制
+		Set<Integer> s=new HashSet<Integer>();
+		for(Integer i:a){
+			s.add(i);
 		}
-	
-		return result;
+		int n=s.size();
+		int i=0;
+		int[] result=new int[n];
+		Iterator<Integer> it=s.iterator();
+		while(it.hasNext()){
+			result[i]=it.next();
+			i++;
+		}
+		return result;	
 	}
 	
 	
