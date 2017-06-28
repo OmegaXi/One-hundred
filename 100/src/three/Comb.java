@@ -1,7 +1,7 @@
 package three;
 
 import java.util.Arrays;
-
+//ох╡╒тыее
 public class Comb {
 	public static int[] combine2(int[] a,int[] b){
 		int length=a.length+b.length;

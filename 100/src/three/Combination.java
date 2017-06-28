@@ -1,7 +1,7 @@
 package three;
 
 import java.util.ArrayList;
-
+//±ﬂ≈≈–Ú±ﬂ≤¢
 public class Combination {
 	public static ArrayList<Integer> combine(int[] a,int[] b){
 		int alen=a.length;
